@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>景点介绍 - 竖向大图展示</title>
+            <link rel="stylesheet" href="styles.css">
+            <style>
+
+                .page-actions{ margin:14px 0; display:flex; gap:8px }
+                .page-actions .btn{ background:#1976d2; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none }
+
+                .portrait-page .layout{ display:flex; gap:28px; align-items:flex-start; }
+                .image-column{ flex:0 0 auto; display:flex; justify-content:center }
+                .portrait-frame{ overflow:hidden; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.12); background:#111; }
+
+                .portrait-frame img{ display:block; height:90vh; width:auto; object-fit:contain }
+
+                .info-column{ flex:1; min-width:260px }
+                .info-column .meta{ color:#666; margin-bottom:12px }
+                .info-column h2{ margin-top:0 }
+                .actions-row{ margin-top:12px; display:flex; gap:10px }
+                .actions-row .btn-secondary{ background:#f5f5f7; color:#222; padding:8px 12px; border-radius:8px; text-decoration:none }
+
+                @media (max-width:900px){
+                    .portrait-page .layout{ flex-direction:column }
+                    .portrait-frame img{ height:60vh }
+                    .image-column{ justify-content:center }
+                }
+
+                .text-columns{ display:flex; gap:18px; margin-top:12px }
+                .text-columns p{ flex:1; background:#fff; padding:12px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.04); line-height:1.7 }
+                @media (max-width:900px){
+                    .text-columns{ flex-direction:column }
+                }
+            </style>
+        </head>
+        <body>
+
+            <header class="container">
+                <h1>毛泽东像</h1>
+                <p class="lead">体会伟人风采，传承红色基因</p>
+
+                <div class="page-actions">
+                    <a class="btn" href="../index.html">首页</a>
+                    <a class="btn" href="Page_2.html">前往醉晚亭</a>
+                    <a class="btn" href="Page_4.html">前往校史馆</a>
+                </div>
+            </header>
+
+            <main class="container portrait-page">
+                <div class="layout">
+                    <div class="image-column">
+                        <div class="portrait-frame">
+                            <img src="../image/Screenshot_20251202_204258858.jpg" alt="毛泽东像">
+                        </div>
+                    </div>
+                    <h2>毛泽东像</h2>
+                    <div class="text-columns">
+                        <p>这座雕像建于文化大革命期间，由当时的华中工学院师生共同参与设计和建造。见证了学校从华中工学院到华中理工大学再到华中科技大学的整个发展历程。历经多次维护修缮，最近一次全面修缮是在2017年（建像50周年）。是武汉地区保存最完好、规模最大的校园毛泽东塑像之一。</p>
+
+                        <p>它不仅是对毛泽东同志的纪念，更是学校红色基因和革命传统的物质载体。已成为华中科技大学最具辨识度的标志性景观之一，是爱国主义教育、革命传统教育和校史教育的生动课堂，承载着几代华中大人的共同记忆，是校友返校必访之地。</p>
+
+                        <p>这座历经半个多世纪的塑像，静静矗立在华中科技大学校园中心，见证着学校从单科性工学院到综合性研究型大学的辉煌发展历程，也将继续见证华中大建设中国特色世界一流大学的奋进之路。</p>
+                    </div>
+                </div>
+            </main>
+        </body>
+        </html>

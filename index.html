@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>华中科技大学景点</title>
+        <link rel="stylesheet" href="web/styles.css">
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                background: url('image/v2-82106b1c9119a3aea3a9e6f3714ab1db_1440w.jpg') center/cover no-repeat fixed;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+                color: #fff;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .overlay {
+                min-height: 100vh;
+                background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 20px;
+                box-sizing: border-box;
+            }
+
+            .site-title { text-align: center; margin-bottom: 18px }
+            .site-title h1 { margin: 0; font-size: 2.2rem; letter-spacing: .6px }
+            .site-title p { margin: 8px 0 0 0; color: #e8e8e8 }
+
+            .nav-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 22px }
+            .nav-links a {
+                background: rgba(255,255,255,0.12);
+                color: #fff;
+                padding: 10px 14px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background .18s, transform .12s;
+            }
+            .nav-links a:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px) }
+
+            @media (max-width: 680px) {
+                .site-title h1 { font-size: 1.6rem }
+                .nav-links a { padding: 9px 12px }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="overlay">
+            <header class="site-title">
+                <h1>华中科技大学景点</h1>
+            </header>
+
+            <nav class="nav-links" aria-label="主要导航">
+                <a href="web/Page_1.html">青年园</a>
+                <a href="web/Page_2.html">醉晚亭</a>
+                <a href="web/Page_3.html">毛泽东像</a>
+                <a href="web/Page_4.html">校史馆</a>
+                <a href="web/Page_5.html">喻家山</a>
+            </nav>
+        </div>
+    </body>
+</html>

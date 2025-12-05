@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喻家山</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .page-actions {
+        margin: 14px 0;
+        display: flex;
+        gap: 8px;
+      }
+
+      .page-actions .btn {
+        background: #1976d2;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 18px 0;
+      }
+
+      .item {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .item img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .item .body {
+        padding: 14px;
+      }
+
+      .item h3 {
+        margin: 0 0 8px 0;
+      }
+
+      .item p {
+        margin: 0;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      .split-item {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+      }
+
+      .split-item img {
+        width: 48%;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .split-item .body {
+        width: 52%;
+      }
+
+      @media (max-width: 900px) {
+        .item img {
+          height: 40vh;
+        }
+
+        .split-item {
+          flex-direction: column;
+        }
+
+        .split-item img {
+          width: 100%;
+          height: 36vh;
+        }
+      }
+    </style>
+  </head>
+  <html>
+    <header class="container">
+      <h1>喻家山</h1>
+      <p class="lead">图文并列展示（每张图片附带简短说明），适合放 2–3 张关键照片。</p>
+
+      <div class="page-actions">
+        <a class="btn" href="../index.html">首页</a>
+        <a class="btn" href="Page_4.html">前往校史馆</a>
+        <a class="btn" href="Page_1.html">前往青年园</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="items">
+        <article class="item">
+          <img src="../image/100t080000003ezv0290A_W_640_10000.jpg" alt="石碑">
+          <div class="body">
+            <h3>喻家山石碑</h3>
+            <p>喻家山的石碑，看见它证明你成功步入喻家山的领地。当然，入口不止这一处，石碑也不止这一个。</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <img src="../image/2023100818_9c051e9fcf77619c2e055aW1o6AXlDij.jpg" alt="东湖绿道">
+          <div class="body">
+            <h3>东湖绿道</h3>
+            <p>早上七点钟，如果你肯起这么早的话，就能看见自律的中年人，与闲聊的打太极的老年人</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <img src="../image/2018100523_97d483513bceb645253aa0OkBSAObCbT.jpg" alt="景点图3（替换）">
+          <div class="body">
+            <h3>寻常路段</h3>
+            <p>密密的植株遮住了你的来路与前路。只管前行，也许在某个转角后，你会发现某些不一样的风景。</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    </html>
+</html>
